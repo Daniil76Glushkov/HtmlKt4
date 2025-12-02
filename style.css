@@ -1,25 +1,56 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
 .main {
- padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background: #d98c2e;
+  background: linear-gradient(90deg,rgba(217, 140, 46, 1) 0%, rgba(219, 208, 0, 1) 100%);
+  box-sizing: border-box;
+  justify-content: center;
 }
-
-
 .basic {
-    background-color: black;
-    width: 100px;
-    height: 100px; 
-    
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  max-width: 100%;
+  display: flex;
+    flex-direction: column;
+     
 }
-
+.text {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+.textIn {
+    padding: 10px;
+}
+/* пк */
+@media (min-width: 1200px) {
+  .main {
+    max-width: 100;
+  }
+}
+/* планшет */
+@media (max-width: 990px) {
+  .main {
+    padding: 15px;
+  }
+}
+/* телефон */
+@media (max-width: 576px) {
+  .main {
+    padding: 10px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}
